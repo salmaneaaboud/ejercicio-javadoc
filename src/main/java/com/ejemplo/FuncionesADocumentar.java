@@ -1,3 +1,5 @@
+package com.ejemplo;
+
 public class FuncionesADocumentar {
     public static void main(String[] args) {
         
