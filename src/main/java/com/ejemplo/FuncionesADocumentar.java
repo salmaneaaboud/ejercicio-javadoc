@@ -15,6 +15,10 @@ public class FuncionesADocumentar {
         ordenar(a);
     }
 
+    /**
+     *
+     *Este método devuelve la suma de todos los elementos del array que se toma como parámetro.
+     */
     public static int suma(int a[]) {
         int suma = 0;
         for (int i = 0; i < a.length; i++)
@@ -22,6 +26,11 @@ public class FuncionesADocumentar {
         return suma;
     }
 
+    /**
+     *
+     * Este método devuelve la media de todos los números de la lista. Para sumar los elementos, se usa el método suma()
+     * y después se divide entre la longitud del array tomado como parámetro.
+     */
     public static double promedio(int a[]) {
         return suma(a) / a.length;
     }
