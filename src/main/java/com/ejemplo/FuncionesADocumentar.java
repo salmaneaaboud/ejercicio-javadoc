@@ -1,8 +1,9 @@
 package com.ejemplo;
 
 public class FuncionesADocumentar {
+
     public static void main(String[] args) {
-        
+
         int a[] = {7, 14, 9, 18, 11, 6, 13, 12, 1, 5, 4, 3, 2, 8, 10};
 
         System.out.println("La suma de los elementos del arreglo es: " + suma(a));
@@ -16,8 +17,9 @@ public class FuncionesADocumentar {
     }
 
     /**
-     *
-     *Este método devuelve la suma de todos los elementos del array que se toma como parámetro.
+     * Calcula la suma de todos los elementos de tipo entero de una lista
+     * @param a Array de enteros
+     * @return La suma de todos los enteros del array a
      */
     public static int suma(int a[]) {
         int suma = 0;
@@ -27,14 +29,19 @@ public class FuncionesADocumentar {
     }
 
     /**
-     *
-     * Este método devuelve la media de todos los números de la lista. Para sumar los elementos, se usa el método suma()
-     * y después se divide entre la longitud del array tomado como parámetro.
+     * Calcula la media de los elementos de una lista de enteros
+     * @param a Array de enteros
+     * @return La media de los elementos del array a
      */
     public static double promedio(int a[]) {
         return suma(a) / a.length;
     }
 
+    /**
+     * Devuelve el mayor elemento de una lista de enteros
+     * @param a Array de enteros
+     * @return El mayor número del array a
+     */
     public static int mayor(int a[]) {
         int mayor = a[0];
         for (int i = 1; i < a.length; i++)
@@ -43,6 +50,11 @@ public class FuncionesADocumentar {
         return mayor;
     }
 
+    /**
+     * Devuelve el elemento más pequeño de una lista de enteros
+     * @param a Array de enteros
+     * @return El elemento más pequeño del array a
+     */
     public static int menor(int a[]) {
         int menor = a[0];
         for (int i = 1; i < a.length; i++)
@@ -51,12 +63,20 @@ public class FuncionesADocumentar {
         return menor;
     }
 
+    /**
+     * Invierte el order de una lista de enteros
+     * @param a Array de enteros
+     */
     public static void invertir(int a[]) {
         for (int i = a.length - 1; i >= 0; i--)
             System.out.print(a[i] + " ");
         System.out.println();
     }
 
+    /**
+     * Ordena de menor a mayor una lista de enteros, además de imprimirla
+     * @param a Array de enteros
+     */
     public static void ordenar(int a[]) {
         int aux;
         for (int i = 0; i < a.length - 1; i++)
