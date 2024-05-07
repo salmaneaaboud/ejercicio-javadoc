@@ -2,6 +2,10 @@ package com.ejemplo;
 
 public class FuncionesADocumentar {
 
+    /**
+     * El método principal para poner en marcha las funciones implementadas
+     * @param args
+     */
     public static void main(String[] args) {
 
         int a[] = {7, 14, 9, 18, 11, 6, 13, 12, 1, 5, 4, 3, 2, 8, 10};
