@@ -1,5 +1,8 @@
 package com.ejemplo;
 
+/**
+ * Esta clase incluye todos los métodos para operar con una lista de elementos de tipo entero
+ */
 public class FuncionesADocumentar {
 
     /**
